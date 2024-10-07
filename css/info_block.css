@@ -124,3 +124,8 @@
     gap: 20px;
   }
 }
+@media screen and (max-width: 900px) {
+  .shadow {
+    display: none;
+  }
+}
