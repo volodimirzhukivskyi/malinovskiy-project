@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/full_bg.css" />
+    <link rel="stylesheet" href="css/info_block.css" />
+    <link rel="stylesheet" href="css/category_slider.css" />
+    <link rel="stylesheet" href="css/review.css" />
+    <title>Full Screen Image Slider</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">ENWOART</div>
+        <nav class="nav">
+
+        </nav>
+    </header>
+    <section class="margin-section">
+        <div class="slider">
+            <div class="slide current">
+                <div class="content">
+                    <h1>Ваш дім – наша пристрасть</h1>
+                    <p>
+                        Створюємо унікальні простори з якістю та професіоналізмом.
+                    </p>
+                    <button class="button">Замовити дзвінок!</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Ремонти, які надихають</h1>
+                    <p>
+                        Втілюємо ваші мрії у життя з ENWOART.
+                    </p>
+                    <button class="button">Замовити дзвінок!</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Будівництво без компромісів</h1>
+                    <p>
+                        Якісні рішення для вашого дому під ключ.
+                    </p>
+                    <button class="button">Замовити дзвінок!</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="slider-navigation">
+            <div class="buttons">
+                <button id="prev" class="nav-button"><i class="fas fa-arrow-left arrow-icon"></i></button>
+                <button id="next" class="nav-button"><i class="fas fa-arrow-right arrow-icon"></i></button>
+
+                <p class="slide-number"><span class="slide-number__current">01</span> / 03</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="company-block margin-section">
+        <div class="company-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="container">
+                <h1 class="text">О КОМПАНІЇ</h1>
+                <h1 class="text shadow">О КОМПАНІЇ</h1>
+            </div>
+            <p><strong>ENWOART</strong> – це команда досвідчених фахівців, яка має багаторічний досвід у ремонті та
+                будівництві.</p>
+            <p>Наша мета – створити простір, в якому вам буде комфортно жити та працювати. Ми цінуємо довіру наших
+                клієнтів і завжди прагнемо перевищити їх очікування. Ми віримо в важливість кожної деталі, тому наші
+                проекти завжди виконуються з максимальною увагою до якості та естетики.</p>
+        </div>
+
+        <div class="company-image" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-francesco-ungaro-28589265-scaled.jpg"
+                alt="Interior Design">
+        </div>
+
+        <div class="company-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat" data-aos="flip-left" data-aos-delay="500">
+                <h3><span class="counter" data-target="15">15</span></h3>
+                <p>лет на рынке</p>
+            </div>
+            <div class="stat" data-aos="flip-left" data-aos-delay="600">
+                <h3><span class="counter" data-target="185">185</span></h3>
+                <p>уникальных проектов</p>
+            </div>
+            <div class="stat" data-aos="flip-left" data-aos-delay="700">
+                <h3><span class="counter" data-target="110">110</span></h3>
+                <p>человек в штате</p>
+            </div>
+            <div class="stat" data-aos="flip-left" data-aos-delay="800">
+                <h3>+<span class="counter" data-target="5">5</span></h3>
+                <p>архитекторов в Швеции</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero margin-section">
+
+        <div class="hero__slider-container">
+            <div class="hero__slide hero__slide--active" id="slide1">
+                <img class="hero__image"
+                    src="https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-life-of-pix-2459-scaled.jpg"
+                    alt="Image 1">
+                <div class="hero__search-wrapper">
+                    <div class="hero__pulse-container">
+                        <svg class="hero__svg-plus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z" />
+                        </svg>
+                        <svg class="hero__svg-minus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h9v1h-9v-1z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero__category">
+                    <h2 class="hero__vertical-text">КОМПЛЕКСНИЙ РЕМОНТ</h2>
+                    <div class="hero__details" id="details1">
+                        <h2 class="hero__title">КОМПЛЕКСНИЙ РЕМОНТ</h2>
+                        <ul class="hero__list">
+                            <li class="hero__list-item">Дизайн інтер’єру – рішення під ваш стиль</li>
+                            <li class="hero__list-item">Оздоблювальні роботи – фарбування, плитка, паркет</li>
+                            <li class="hero__list-item">Сантехніка – встановлення, заміна труб і опалення</li>
+                            <li class="hero__list-item">Електромонтаж – проєктування і монтаж освітлення</li>
+                        </ul>
+                        <button class="hero__button button">Замовити консультацію</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero__slide hero__slide--active" id="slide2">
+                <img class="hero__image"
+                    src="https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-life-of-pix-2459-scaled.jpg"
+                    alt="Image 1">
+                <div class="hero__search-wrapper">
+                    <div class="hero__pulse-container">
+                        <svg class="hero__svg-plus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z" />
+                        </svg>
+                        <svg class="hero__svg-minus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h9v1h-9v-1z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero__category">
+                    <h2 class="hero__vertical-text">ЗАГАЛЬНОБУДІВЕЛЬНІ РОБОТИ</h2>
+                    <div class="hero__details" id="details2">
+                        <h2 class="hero__title">ЗАГАЛЬНОБУДІВЕЛЬНІ РОБОТИ</h2>
+                        <ul class="hero__list">
+                            <li class="hero__list-item">Будівництво під ключ – від фундаменту до даху</li>
+                            <li class="hero__list-item">Реконструкція – перепланування приміщень</li>
+                            <li class="hero__list-item">Утеплення – рішення для енергоефективності</li>
+                        </ul>
+                        <button class="hero__button button">Замовити консультацію</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero__slide hero__slide--active" id="slide2">
+                <img class="hero__image"
+                    src="https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-life-of-pix-2459-scaled.jpg"
+                    alt="Image 1">
+                <div class="hero__search-wrapper">
+                    <div class="hero__pulse-container">
+                        <svg class="hero__svg-plus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z" />
+                        </svg>
+                        <svg class="hero__svg-minus" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h9v1h-9v-1z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero__category">
+                    <h2 class="hero__vertical-text">ФАСАДНІ РОБОТИ</h2>
+                    <div class="hero__details" id="details3">
+                        <h2 class="hero__title">ФАСАДНІ РОБОТИ</h2>
+                        <ul class="hero__list">
+                            <li class="hero__list-item">Оздоблення фасадів – утеплення, фарбування, монтаж систем</li>
+                            <li class="hero__list-item">Декоративні елементи – підкреслення індивідуальності будинку
+                            </li>
+                        </ul>
+                        <button class="hero__button button">Замовити консультацію</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="reviews-section margin-section">
+        <div class="container">
+            <h1 class="text">Відгуки наших клієнтів</h1>
+            <h1 class="text shadow">Відгуки наших клієнтів</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="review" data-aos="fade-left" data-aos-delay="100">
+                <p class="review-author">Олександр М.</p>
+
+                <p class="review-text">Команда ENWOART перевершила всі мої очікування! Якість виконаних робіт на
+                    висоті, а сервіс – надійний. Рекомендую всім!</p>
+            </div>
+            <div class="review" data-aos="fade-right" data-aos-delay="200">
+                <p class="review-author">Марина Т.</p>
+
+                <p class="review-text">Дуже задоволена ремонтом своєї квартири! Все виконано вчасно та якісно. Особливо
+                    вдячна за професійний підхід до дизайну.</p>
+            </div>
+            <div class="review" data-aos="fade-left" data-aos-delay="300">
+                <p class="review-author">Ігор П.</p>
+
+                <p class="review-text">Фасад мого будинку виглядає неймовірно! ENWOART знає, як втілити в життя навіть
+                    найскладніші ідеї.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/full_bg_script.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/category-slider.js"></script>
+    <script src="scripts/other.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.company-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.company-info {
+  grid-column: 1 / span 1;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.company-info .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.company-image {
+  grid-column: 2 / span 1;
+}
+
+.company-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.company-stats {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.company-stats .stat {
+  text-align: center;
+}
+
+.company-stats .stat h3 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.company-stats .stat p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.shadow {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 3rem;
+  position: absolute;
+  left: 15%;
+  white-space: nowrap;
+  top: -12px;
+  animation: fadeInShadow 1s 1s forwards; /* Затримка на 1 секунду для підложки */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInShadow {
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 900px) {
+  .company-block {
+    grid-template-columns: 1fr;
+  }
+
+  .company-info,
+  .company-stats,
+  .company-image {
+    grid-column: 1 / -1; /* Елементи займуть всю ширину сітки */
+  }
+  .company-image img {
+    width: 80%;
+  }
+  .company-image {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .company-image img {
+    width: 100%;
+  }
+  .company-stats {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
