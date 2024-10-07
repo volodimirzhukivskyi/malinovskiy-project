@@ -3,6 +3,7 @@
   padding: 60px;
   color: var(--text);
   text-align: center;
+  overflow: hidden;
 }
 
 .reviews-container {
