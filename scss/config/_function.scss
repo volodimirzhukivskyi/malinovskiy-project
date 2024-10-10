@@ -1,0 +1,29 @@
+// !TO PERCENT %:
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+// !TO REM:
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
+@function clVal($min-vw, $max-vw, $min-font, $max-font) {
+  $min-vw-rem: $min-vw / 16; // переводимо px у rem для зручності
+  $max-vw-rem: $max-vw / 16;
+  $min-font-rem: $min-font / 16;
+  $max-font-rem: $max-font / 16;
+
+  @return clamp(
+    #{$min-font-rem}rem,
+    calc(#{$min-font-rem}rem + (#{$max-font-rem} - #{$min-font-rem}) * ((100vw - #{$min-vw-rem}rem) / (#{$max-vw-rem} - #{$min-vw-rem}))),
+    #{$max-font-rem}rem
+  );
+}

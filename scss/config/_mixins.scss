@@ -1,0 +1,41 @@
+// !media
+@mixin media($width) {
+  @media (max-width: #{$width + '.98' + px}) {
+    @content;
+  }
+}
+@mixin mediaMin($width) {
+  @media (min-width: #{$width + '.98' + px}) {
+    @content;
+  }
+}
+
+@mixin lineClamp($value) {
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@mixin mdBetween($min, $max) {
+  @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+    @content;
+  }
+}
+@mixin is_dark($selector) {
+  body.dark-theme #{$selector} {
+    @content;
+  }
+}
+// !:not (last-child)
+@mixin notLast() {
+  &:not(:last-child) {
+    @content;
+  }
+}
+
+// !:not (first-child)
+@mixin notFirst() {
+  &:not(:first-child) {
+    @content;
+  }
+}

@@ -4,29 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/full_bg.css" />
-    <link rel="stylesheet" href="css/info_block.css" />
-    <link rel="stylesheet" href="css/category_slider.css" />
-    <link rel="stylesheet" href="css/review.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>Full Screen Image Slider</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">ENWOART</div>
+    <header class="header header__container">
+        <div class="logo">.ENWOART</div>
         <nav class="nav">
 
         </nav>
     </header>
-    <section class="margin-section">
+    <aside class="aside">
+        <ul class="aside__list aside-list">
+            <li class="aside-list__item"><a href="" class="aside-list__link">Facebook</a></li>
+            <li class="aside-list__item"><a href="" class="aside-list__link">Instagram</a></li>
+            <li class="aside-list__item"><a href="" class="aside-list__link">Twitter</a></li>
+        </ul>
+
+    </aside>
+    <section class="margin-section ">
         <div class="slider">
             <div class="slide current">
-                <div class="content">
+                <div class="content ">
                     <h1>Ваш дім – наша пристрасть</h1>
                     <p>
                         Створюємо унікальні простори з якістю та професіоналізмом.
@@ -55,7 +64,12 @@
 
 
         </div>
-        <div class="slider-navigation">
+        <div class="slider-navigation__container">
+            <div class="slider-navigation__contacts">
+                <p class="slider-navigation__text"> Москва, ул. Большая, 104а</p>
+                <p class="slider-navigation__text">info@vatanen.com</p>
+                <p class="slider-navigation__text">+00 123 45 67</p>
+            </div>
             <div class="buttons">
                 <button id="prev" class="nav-button"><i class="fas fa-arrow-left arrow-icon"></i></button>
                 <button id="next" class="nav-button"><i class="fas fa-arrow-right arrow-icon"></i></button>
@@ -65,27 +79,31 @@
         </div>
 
     </section>
-    <section class="company-block margin-section">
+    <section class="company-block margin-section ">
+
         <div class="company-info" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <h1 class="text">О КОМПАНІЇ</h1>
                 <h1 class="text shadow">О КОМПАНІЇ</h1>
             </div>
-            <p><strong>ENWOART</strong> – це команда досвідчених фахівців, яка має багаторічний досвід у ремонті та
-                будівництві.</p>
-            <p>Наша мета – створити простір, в якому вам буде комфортно жити та працювати. Ми цінуємо довіру наших
-                клієнтів і завжди прагнемо перевищити їх очікування. Ми віримо в важливість кожної деталі, тому наші
-                проекти завжди виконуються з максимальною увагою до якості та естетики.</p>
+            <div class="text-content">
+                <p><strong>ENWOART</strong> – це команда досвідчених фахівців, яка має багаторічний досвід у ремонті та
+                    будівництві.</p>
+                <p>Наша мета – створити простір, в якому вам буде комфортно жити та працювати. Ми цінуємо довіру наших
+                    клієнтів і завжди прагнемо перевищити їх очікування. Ми віримо в важливість кожної деталі, тому наші
+                    проекти завжди виконуються з максимальною увагою до якості та естетики.</p>
+            </div>
+
         </div>
 
-        <div class="company-image" data-aos="zoom-in" data-aos-delay="300">
+        <div class="company-image " data-aos="zoom-in" data-aos-delay="300">
             <img src="https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-francesco-ungaro-28589265-scaled.jpg"
                 alt="Interior Design">
         </div>
 
-        <div class="company-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="company-stats company-stats__container" data-aos="fade-up" data-aos-delay="400">
             <div class="stat" data-aos="flip-left" data-aos-delay="500">
-                <h3><span class="counter" data-target="15">15</span></h3>
+                <h3 class="company-stats__number"><span class="counter" data-target="15">15</span></h3>
                 <p>лет на рынке</p>
             </div>
             <div class="stat" data-aos="flip-left" data-aos-delay="600">
@@ -231,6 +249,45 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <h1 class="text">Залишайтеся на зв'язку</h1>
+            <h1 class="text shadow">Залишайтеся на зв'язку</h1>
+        </div>
+        <div class="contact-section" data-aos="fade-up">
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Имя" name="name">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="tel" placeholder="Телефон" name="phone">
+                    </div>
+                    <textarea placeholder="Сообщение" name="message"></textarea>
+                    <button type="submit " class="button">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-info__numbers">
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    <a href="tel:+74959877654">+7 (495) 987-76-54</a>
+                </div>
+                <div class="contact-info__emails">
+                    <a href="mailto:info@vatanen.com">info@vatanen.com</a>
+                    <a href="mailto:manager@vatanen.com">manager@vatanen.com</a>
+                </div>
+                <div class="contact-info__address">
+                    <p>Россия, г. Москва,<br>Ленинградский проспект, д. 1, стр. 2</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>.ENWOART</p>
+            <p>2024 All Right Reserved</p>
+        </div>
+
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/full_bg_script.js"></script>
