@@ -117,6 +117,7 @@
 }
 
 .hero__list li {
+  @extend .regular-text;
   counter-increment: list-counter;
 
   /* Інкремент лічильника */

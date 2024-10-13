@@ -1,0 +1,92 @@
+.dependence {
+  margin-bottom: 81px;
+  &__title {
+    margin-bottom: 20px;
+    text-align: left;
+    @include media(1000) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-container {
+    display: grid;
+    flex: 1;
+    gap: 5px;
+  }
+  &__conntent {
+    display: flex;
+    gap: 12px;
+  }
+  &__wrapper-img {
+    min-height: 100%;
+    flex: 1;
+    @include media(1000) {
+      display: none;
+    }
+
+    & img {
+      position: sticky;
+      top: 60px;
+      max-width: 100%;
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    padding: 35px;
+    top: 50px;
+    /* Відстань від верху сторінки, де картки "злипаються" */
+    width: 100%;
+    max-width: 795px;
+    min-height: 250px;
+    background: $second-bg;
+    z-index: 0;
+    /* Базовий z-індекс */
+    transform: scale(1);
+    transition: transform 0.3s ease, z-index 0.3s ease, margin 0.3s ease;
+    @include media(1000) {
+      padding: 26px;
+    }
+    &__title {
+      line-height: 1.11;
+      margin-bottom: 22px;
+      font-size: 36px;
+    }
+    &__number {
+      font-size: 33px;
+      text-align: right;
+      // line-height: 30px;
+      line-height: 0.90909;
+      color: $main;
+    }
+  }
+  &-card--primary {
+    background: $accept-bg;
+    // border: 1px solid #f4f6fb;
+    & .button {
+      align-self: flex-end;
+      display: inline-flex;
+      justify-content: center;
+      @include media(768) {
+        align-self: center;
+      }
+    }
+    & .title--lg {
+      text-align: left;
+      @include media(768) {
+        text-align: center;
+      }
+    }
+    & .regular-text--md {
+      @include media(768) {
+        text-align: center;
+      }
+    }
+    & .dependence-card__content {
+      padding-top: 20px;
+    }
+  }
+}

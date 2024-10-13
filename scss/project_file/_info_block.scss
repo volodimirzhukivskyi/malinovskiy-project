@@ -57,7 +57,7 @@
     }
 
     p {
-      font-size: 14px;
+      @extend .regular-text;
       color: #bbb;
       width: 50%;
       text-align: left;

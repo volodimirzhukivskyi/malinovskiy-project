@@ -1,0 +1,106 @@
+.contacts-hero {
+  @extend .margin-section;
+  background-color: $accept-bg;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    & * {
+      color: $text--dark;
+      max-width: 40%;
+      @include media(1500) {
+        max-width: 60%;
+      }
+      @include media(768) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.contacts {
+  &__contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    & button {
+      width: fit-content;
+      align-self: flex-end;
+      @include media(900) {
+        width: 100%;
+        align-self: self-start;
+      }
+    }
+    @include media(900) {
+      flex-direction: column;
+    }
+  }
+  &-map {
+    background-color: $accept-bg;
+    &__container {
+      position: relative;
+      top: -175px;
+    }
+  }
+}
+.contact-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: $text;
+  gap: 10px;
+  align-items: center;
+  & svg {
+    fill: $main;
+  }
+}
+
+.info-item .material-icons {
+  font-size: 24px;
+  color: #ff6600;
+  margin-right: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+
+  & svg {
+    fill: $main;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.social-media .material-icons {
+  font-size: 30px;
+  color: #ff6600;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-media .material-icons:hover {
+  color: #333;
+}

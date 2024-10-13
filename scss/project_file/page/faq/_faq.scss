@@ -1,0 +1,17 @@
+@import '_acardion.scss';
+.faq-hero {
+  @extend .margin-section;
+  &__container {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $accept-bg;
+    & * {
+      color: $text--dark;
+    }
+    @include media(768) {
+      min-height: 100vh;
+    }
+  }
+}
