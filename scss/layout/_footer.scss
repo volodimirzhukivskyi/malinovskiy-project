@@ -3,6 +3,10 @@
   justify-content: center;
   gap: 40px;
   color: #ffffff;
+  @include media(768) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-form {
@@ -33,6 +37,9 @@
         }
       }
     }
+  }
+  @include media(768) {
+    max-width: 100%;
   }
 }
 
@@ -78,6 +85,9 @@
         text-decoration: underline;
       }
     }
+  }
+  @include media(768) {
+    max-width: 100%;
   }
 }
 

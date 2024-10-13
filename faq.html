@@ -25,12 +25,31 @@
         </nav>
     </header>
     <aside class="aside">
-        <ul class="aside__list aside-list">
-            <li class="aside-list__item"><a href="" class="aside-list__link">Facebook</a></li>
-            <li class="aside-list__item"><a href="" class="aside-list__link">Instagram</a></li>
-            <li class="aside-list__item"><a href="" class="aside-list__link">Twitter</a></li>
-        </ul>
-
+        <svg class="vbp-header-menu-button__svg">
+            <line x1="0" y1="50%" x2="100%" y2="50%" class="top" shape-rendering="crispEdges" />
+            <line x1="0" y1="50%" x2="100%" y2="50%" class="middle" shape-rendering="crispEdges" />
+            <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom" shape-rendering="crispEdges" />
+        </svg>
+        <div class="aside-content">
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Категорії</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="aside__list aside-list">
+                <li class="aside-list__item"><a href="" class="aside-list__link">Facebook</a></li>
+                <li class="aside-list__item"><a href="" class="aside-list__link">Instagram</a></li>
+                <li class="aside-list__item"><a href="" class="aside-list__link">Twitter</a></li>
+            </ul>
+        </div>
     </aside>
     <main>
         <section class="faq-hero">
@@ -44,7 +63,7 @@
         </section>
 
 
-        <div class="accordion-wrapper accardion__container  ">
+        <div class="accordion-wrapper accardion__container  " data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <h1 class="text">Питання блок 1</h1>
                 <h1 class="text shadow">Питання блок 1</h1>
@@ -80,7 +99,7 @@
                     систем у вашій квартирі.</p>
             </div>
         </div>
-        <div class="accordion-wrapper accardion__container  ">
+        <div class="accordion-wrapper accardion__container  " data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <h1 class="text">Питання блок 2</h1>
                 <h1 class="text shadow">Питання блок 2</h1>
@@ -176,6 +195,7 @@
         }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/burger-menu.js"></script>
     <script src="scripts/full_bg_script.js"></script>
     <script src="scripts/counter.js"></script>
     <script src="scripts/category-slider.js"></script>

@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  padding-right: 0;
 }
 
 .company-info {
   grid-column: 1 / span 1;
-  padding-left: clamp(1.25rem, -1.4384rem + 11.0294vw, 10.625rem);
 
   h2 {
     font-size: 24px;
