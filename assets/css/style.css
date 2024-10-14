@@ -337,6 +337,11 @@ body {
 .slide.current .content .button {
   align-self: start;
 }
+@media (min-width: 900.98px) {
+  .slide.current .content {
+    transform: translateX(700px) !important;
+  }
+}
 .slide:first-child {
   background: url("https://stroy.codium.com.ua/wp-content/uploads/2024/09/pexels-expect-best-79873-323780-scaled.jpg") no-repeat center top/cover;
 }
@@ -379,6 +384,8 @@ body {
   }
   .slide.current .content {
     transform: translateX(500px);
+    left: -500px;
+    max-width: 80%;
   }
 }
 @media (min-width: 900.98px) {
